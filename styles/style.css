@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.logo_black {
+.logo_header {
     width: 148px;
     height: 105px;
 }
@@ -19,19 +19,19 @@
     list-style-position: outside;
 }
 
-.none_style {
+.links-list-item_no-bullit {
     list-style: none;
   }
-  
-.none_underline {
-    text-decoration: none;
-}
 
-.header_contacts {
+.header_address {
     max-width: 240px;
     justify-self: end;
+    
+}
+
+.address
+{
     font-size: 18px;
-    list-style: none;
     line-height: 24.3px;
 }
 
@@ -40,17 +40,27 @@
     border-bottom: 1px solid black;
 }
 
+
+.overlay { 
+    inset: 0; 
+    width: 100%; 
+    position: absolute; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1; 
+  }
+
 .cover {
     padding: 165px 50px 50px 50px;
     margin-bottom: 180px;
-    height: 757px;
+    min-height: 757px;
+    height: 100%;
     background-color: black;
     position: relative;
     display: grid;
     align-content:space-between ;
     box-sizing: border-box;
     background-image: url(../images/cover.jpg);
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -81,23 +91,19 @@
 }
 
 .title_text_center {
-    position: absolute;
-    top: 300px;
-    left: 380px;
     text-align: center;  
     font-size: 100px;
+    margin-right: -0.3em;
 }
 
 .title_text_right { 
-    position: absolute;
-    right: 20px;
-    top: 435px;
     text-align: end; 
-    font-size: 100px;   
+    font-size: 100px; 
+    margin-right: -0.3em;  
 }
 
 .description {
-    height: 51px;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,7 +113,6 @@
     position:relative;
     z-index: 2;
     color:white;
-    font-family: Raleway;
     font-size: 22px;
     font-weight: 150;
     line-height: 28px;
@@ -123,7 +128,7 @@
     z-index: 2;
     background: none;
     border: line 1px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid currentColor;
     color: #FFFFFF;
     width: 256px;
     height: 51px;
@@ -163,6 +168,7 @@
     width: 334px;
     min-height: 596px;
     display: grid;
+    background-size: cover;
 }
 
 .card__title {
@@ -198,17 +204,24 @@
 
 .card_type_film {   
     background-image: url(../images/card-lot-01.jpg);
+    background-position: center;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
+    background-position: center;
+
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
+    background-position: center;
+
 }
 
 .lots_see_more {
+    max-width: 192px;
+    width: 100%;
     margin-left: 40px;
     font-family: Raleway;
     font-size: 20px;
@@ -219,12 +232,10 @@
 }
 
 .about {
-    margin: 0 24px 180px 47px;
-    padding: 35px 0 0 27px;
-    height:595px;
+    margin: 0 24px 156px 47px;
+    padding: 31px 0 0 25px;
     display: grid;
     grid-template-columns: 284px max-content;
-    grid-template-rows: 1fr 1fr;
     position: relative;
 }
 
@@ -239,42 +250,30 @@
     justify-content: center;  
 }
 
-.logo_white {
+.logo_about {
     width: 148px;
     height: 114px;
 }
 
 .column_text {
     margin: 103px 0 0 27px;
-    width: 693px;
-    height: 470px;
-    display: flex;
-    flex-direction: column;
-    gap: 98px 0;
-    flex-wrap: wrap;
-    word-wrap: normal;
+    width: 693px;   
 }
 
 .about_text-item {
     font-family: Raleway;
-    height:312px;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     text-overflow: clip;
-}
-
-.paragraph1 {
-    height:120px;
-    width: 688px;
-    text-align: left;
-}
-
-.paragraph2 {
-    width: 693px;
-    height: 168px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 98px 0;
+    flex-wrap: wrap;
+    word-wrap: normal;
     text-align: left;
 }
 
@@ -288,6 +287,7 @@
     text-decoration-skip-ink: none;
     color: black;
     text-transform: uppercase;
+    margin-bottom: 100px;
 }
 
 .paragraph1 {
@@ -296,23 +296,18 @@
 
 .footer {
     padding: 0 50px;
-    height: 180px;
     display: grid;
     grid-template-columns: 264px 187px 240px;
     align-content: start;  
     justify-content: space-between;
 }
 
-.footer_contacts {
-    font-family: Raleway;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.3px;
+.footer_address {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     width: 264px;
-    height: 98px;
+    /* height: 98px; */
 }
 
 .footer_links {
@@ -333,7 +328,6 @@
 }
 
 .footer_socials {
-    height: 48px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -342,4 +336,8 @@
 .socials{
     width: 48px;
     height: 48px;
+}
+
+.none_underline {
+    text-decoration: none;
 }
