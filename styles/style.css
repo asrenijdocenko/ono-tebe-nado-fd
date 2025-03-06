@@ -60,7 +60,7 @@
     align-content:space-between ;
     box-sizing: border-box;
     background-image: url(../images/cover.jpg);
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -155,8 +155,9 @@
     display: flex;
     gap: 25px;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap;        
 }
+
 
 .lots_card-list-item {
     margin-bottom: 30px;
@@ -169,13 +170,24 @@
     min-height: 596px;
     display: grid;
     background-size: cover;
+    background-position: center;
+}
+
+.card_link {
+    min-height: 500px;
+}
+
+.card_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    align-content: space-between;
 }
 
 .card__title {
     z-index: 2;
-    height: 100%;
-    position: relative;
-    font-family: Raleway;
     font-size: 22px;
     font-weight: 700;
     line-height: 26.4px;
@@ -189,10 +201,7 @@
 }
 
 .card__text {
-    height: 100%;
     z-index: 2;
-    position: relative;
-    font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -202,28 +211,24 @@
     color: #FFFFFF;
 }
 
+
+
 .card_type_film {   
     background-image: url(../images/card-lot-01.jpg);
-    background-position: center;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-position: center;
-
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-position: center;
-
 }
 
 .lots_see_more {
     max-width: 192px;
     width: 100%;
     margin-left: 40px;
-    font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
     line-height: 23.48px;
@@ -261,7 +266,6 @@
 }
 
 .about_text-item {
-    font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -278,7 +282,6 @@
 }
 
 .about_title {
-    font-family: Raleway;
     font-size: 40px;
     font-weight: 700;
     line-height: 46.96px;
@@ -295,6 +298,8 @@
 }
 
 .footer {
+    min-height: 180px;
+    height: 100%;
     padding: 0 50px;
     display: grid;
     grid-template-columns: 264px 187px 240px;
@@ -307,7 +312,6 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     width: 264px;
-    /* height: 98px; */
 }
 
 .footer_links {
@@ -316,7 +320,6 @@
     align-items: center;
     justify-items: center;
     height: 64px;
-    font-family: Raleway;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.13px;
