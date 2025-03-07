@@ -298,8 +298,7 @@
 }
 
 .footer {
-    min-height: 180px;
-    height: 100%;
+    margin-bottom: 90px;
     padding: 0 50px;
     display: grid;
     grid-template-columns: 264px 187px 240px;
@@ -319,7 +318,6 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    height: 64px;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.13px;
@@ -330,7 +328,7 @@
     padding-right: 20px;
 }
 
-.footer_socials {
+.footer_socials {   
     position: relative;
     display: flex;
     justify-content: space-between;
